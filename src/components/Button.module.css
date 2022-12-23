@@ -1,0 +1,29 @@
+.button {
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 21px;
+    border: none;
+    background-color: var(--main-key-background);
+    border-bottom: 3px solid var(--main-key-border);
+    color: var(--main-key-color);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button:nth-child(4) {
+    background-color: var(--secondary-key-background);
+    border-bottom: 3px solid var(--secondary-key-border);
+    color: var(--secondary-key-color);
+}
+.button:nth-child(17){
+    grid-column: 1 / 3;
+    background-color: var(--secondary-key-background);
+    border-bottom: 3px solid var(--secondary-key-border);
+    color: var(--secondary-key-color);
+}
+.button:nth-child(18){
+    grid-column: 3 / 5;
+    background-color: var(--equal-key-background);
+    border-bottom: 3px solid var(--equal-key-border);
+    color: var(--equal-key-color);
+}

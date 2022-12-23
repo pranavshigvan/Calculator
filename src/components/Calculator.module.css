@@ -1,0 +1,12 @@
+.calculator {
+    width: 350px;
+}
+.buttons {
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    background-color: var(--secondary-background);
+    text-transform: uppercase;
+}
