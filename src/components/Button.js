@@ -14,6 +14,7 @@ const Button = (props) => {
         props.setText("")
         break;
       case "Equal":
+      case "Enter":
         let ans
         try {
           ans = eval(props.displayText)
@@ -23,7 +24,7 @@ const Button = (props) => {
           alert("please enter valid input")
         }
         
-        break
+        break;
       default:
         props.setText(prev=>{
           return prev+val
@@ -34,7 +35,7 @@ const Button = (props) => {
   window.onkeydown = (e)=>{
     
     let key = e.key
-    if(key.search(/[0-9*/+\-.]/)>=0 || key === "Backspace" || key === "="){
+    if(key.search(/[0-9*/+\-.]/)>=0 || key === "Backspace" || key === "=" || key === "Enter"){
       console.log(e)
       handleClick(key)
     }

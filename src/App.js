@@ -1,9 +1,9 @@
 import './App.css';
 import Calculator from "./components/Calculator"
-import { useContext, useState} from 'react';
+import { useContext} from 'react';
 import {ThemeContext} from './context/ThemeContext';
 function App() {
-  let [theme,setTheme]=useContext(ThemeContext)
+  let [theme]=useContext(ThemeContext)
   return (
       <div className={`App ${theme}`}  >
         <Calculator />
